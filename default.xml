@@ -479,7 +479,9 @@
   <project path="device/samsung/i9100" name="Mahdi-Rom/android_device_samsung_i9100" remote="github" revision="kk-4.4" />
 
   <!-- Mahdi-Rom vendor -->
-  <project path="vendor/mahdi" name="Mahdi-Rom/android_vendor_mahdi" remote="Mahdi-Rom" revision="kk-4.4" />
+  <project path="vendor/mahdi" name="eugenesan/android_vendor_mahdi" remote="github" revision="kk-4.4" >
+    <copyfile src="build-rom.sh" dest="build-rom.sh" />
+  </project>
   <project path="packages/apps/MahdiCenter" name="Mahdi-Rom/android_packages_apps_MahdiCenter" remote="github" revision="kk-4.4" />
 
   <!-- Theme Manager -->
