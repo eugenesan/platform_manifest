@@ -11,7 +11,7 @@
   <remote  name="github"
            fetch="https://github.com" />
 
-  <project path="build" name="Mahdi-Rom/android_build" groups="pdk" remote="github" revision="kk-4.4" >
+  <project path="build" name="eugenesan/android_build" groups="pdk" remote="github" revision="kk-4.4" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
