@@ -415,7 +415,7 @@
   <project path="prebuilts/tools" name="platform/prebuilts/tools" groups="pdk,tools" />
   <project path="sdk" name="platform/sdk" />
   <project path="system/core" name="platform/system/core" groups="pdk" />
-  <project path="system/extras" name="platform/system/extras" groups="pdk" />
+  <project path="system/extras" name="eugenesan/android_system_extras" remote="github" revision="android-4.4_r1.2"/>
   <project path="system/media" name="platform/system/media" groups="pdk" />
   <project path="system/netd" name="platform/system/netd" groups="pdk" />
   <project path="system/security" name="platform/system/security" groups="pdk" />
@@ -443,7 +443,6 @@
   <!-- Addons: Tools -->
   <project path="external/fuse" name="CyanogenMod/android_external_fuse" groups="pdk" remote="github" revision="cm-11.0" />
   <project path="external/libncurses" name="CyanogenMod/android_external_libncurses" groups="pdk" remote="github" revision="cm-11.0" />
-  <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-11.0" />
   <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" revision="cm-11.0" />
   <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-11.0" />
   <project path="external/crda" name="CyanogenMod/android_external_crda" groups="pdk" remote="github" revision="cm-11.0" />
