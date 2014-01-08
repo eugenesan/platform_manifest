@@ -2,13 +2,17 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".." />
-  <default revision="refs/tags/android-4.4_r1.2"
+           fetch="https://android.googlesource.com" />
+  <default revision="refs/tags/android-4.4.2_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="platform/build" groups="pdk" >
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <project path="build" name="eugenesan/android_build" groups="pdk" remote="github" revision="android-4.4_r1.2" >
     <copyfile src="core/root.mk" dest="Makefile" />
+    <copyfile src="addons/build.sh" dest="build.sh" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
   <project path="art" name="platform/art" />
@@ -428,4 +432,36 @@
   <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
 
+  <!-- Addons: Superuser -->
+  <project path="external/rsync" name="CyanogenMod/android_external_rsync" remote="github" revision="cm-11.0" />
+  <project path="external/gson" name="CyanogenMod/android_external_gson" remote="github" revision="cm-11.0" />
+  <project path="external/koush/ion" name="CyanogenMod/ion" remote="github" revision="cm-11.0" />
+  <project path="external/koush/AndroidAsync" name="CyanogenMod/AndroidAsync" remote="github" revision="cm-11.0" />
+  <project path="external/koush/Superuser" name="CyanogenMod/Superuser" remote="github" revision="cm-11.0" />
+  <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github" revision="cm-11.0" />
+
+  <!-- Addons: Tools -->
+  <project path="external/fuse" name="CyanogenMod/android_external_fuse" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="external/libncurses" name="CyanogenMod/android_external_libncurses" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="external/libtar" name="CyanogenMod/android_external_libtar" remote="github" revision="cm-11.0" />
+  <project path="external/bash" name="CyanogenMod/android_external_bash" remote="github" revision="cm-11.0" />
+  <project path="external/busybox" name="CyanogenMod/android_external_busybox" remote="github" revision="cm-11.0" />
+  <project path="external/crda" name="CyanogenMod/android_external_crda" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="external/exfat" name="CyanogenMod/android_external_exfat" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="external/kissfft" name="CyanogenMod/android_external_kissfft" groups="pdk" remote="github" revision="cm-11.0" />
+  <project path="external/nano" name="CyanogenMod/android_external_nano" remote="github" revision="cm-11.0" />
+  <project path="external/ntfs-3g" name="CyanogenMod/android_external_ntfs-3g" remote="github" revision="cm-11.0" />
+  <project path="external/pciutils" name="CyanogenMod/android_external_pciutils" remote="github" revision="cm-11.0" />
+  <project path="external/pigz" name="CyanogenMod/android_external_pigz" remote="github" revision="cm-11.0" />
+
+  <!-- Addons: Features
+  <project path="packages/apps/Apollo" name="CyanogenMod/android_packages_apps_Apollo" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/CMFileManager" name="CyanogenMod/android_packages_apps_CMFileManager" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/Torch" name="CyanogenMod/android_packages_apps_Torch" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/ScreenRecorder" name="CyanogenMod/android_packages_apps_ScreenRecorder" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/DSPManager" name="CyanogenMod/android_packages_apps_DSPManager" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/LockClock" name="CyanogenMod/android_packages_apps_LockClock" remote="github" revision="cm-11.0" />
+  <project path="packages/apps/PerformanceControl" name="CyanogenMod/android_packages_apps_PerformanceControl" remote="github" revision="cm-11.0" />
+   -->
 </manifest>
