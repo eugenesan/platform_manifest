@@ -456,6 +456,8 @@
   <project path="external/koush/Superuser" name="CyanogenMod/Superuser" remote="github" revision="cm-11.0" />
   <project path="external/koush/Widgets" name="CyanogenMod/Widgets" remote="github" revision="cm-11.0" />
 
+  <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" remote="github" revision="cm-11.0" />
+
   <project path="packages/apps/Apollo" name="Mahdi-Rom/android_packages_apps_Apollo" remote="github" revision="kk-4.4" />
   <project path="packages/apps/CMFileManager" name="Mahdi-Rom/android_packages_apps_CMFileManager" remote="github" revision="kk-4.4" />
   <project path="packages/apps/DSPManager" name="Mahdi-Rom/android_packages_apps_DSPManager" remote="github" revision="kk-4.4" />
@@ -464,15 +466,12 @@
   <project path="packages/apps/LockClock" name="Mahdi-Rom/android_packages_apps_LockClock" remote="github" revision="kk-4.4" />
   <project path="packages/apps/PerformanceControl" name="Mahdi-Rom/android_packages_apps_PerformanceControl" remote="github" revision="kk-4.4" />
 
-  <project path="packages/apps/VoicePlus" name="CyanogenMod/android_packages_apps_VoicePlus" remote="github" revision="cm-11.0" />
-
   <!-- CyanogenMod H/W suppport -->
   <project path="hardware/samsung" name="Mahdi-Rom/android_hardware_samsung" groups="pdk" remote="github" revision="kk-4.4" />
   <project path="hardware/qcom/audio-caf" name="Mahdi-Rom/android_hardware_qcom_audio-caf" groups="qcom" remote="github" revision="kk-4.4" />
   <project path="hardware/qcom/display-caf" name="Mahdi-Rom/android_hardware_qcom_display-caf" groups="qcom" remote="github" revision="kk-4.4" />
   <project path="hardware/qcom/media-caf" name="Mahdi-Rom/android_hardware_qcom_media-caf" groups="qcom" remote="github" revision="kk-4.4" />
   <project path="hardware/qcom/gps" name="Mahdi-Rom/android_hardware_qcom_gps" groups="qcom" remote="github" revision="kk-4.4" />
-  <project path="system/qcom" name="Mahdi-Rom/android_system_qcom" groups="pdk" remote="github" revision="kk-4.4" />
 
   <!-- CyanogenMod devices -->
   <project path="device/lge/v500" name="Mahdi-Rom/android_device_lge_v500" remote="github" revision="kk-4.4" />
@@ -487,7 +486,7 @@
 
   <!-- Mahdi-Rom vendor -->
   <project path="vendor/mahdi" name="eugenesan/android_vendor_mahdi" remote="github" revision="kk-4.4" >
-    <copyfile src="build-rom.sh" dest="build-rom.sh" />
+    <copyfile src="build.sh" dest="build.sh" />
   </project>
   <project path="packages/apps/MahdiCenter" name="Mahdi-Rom/android_packages_apps_MahdiCenter" remote="github" revision="kk-4.4" />
 
